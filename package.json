@@ -1,0 +1,22 @@
+{
+  "name": "phi_local",
+  "version": "0.1.0",
+  "description": "PhiGenix tout-en-un (offline) avec Electron + llama.cpp",
+  "main": "src/main/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development electron .",
+    "start": "electron .",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "29.4.0",
+    "electron-builder": "^24.9.5"
+  }
+}
